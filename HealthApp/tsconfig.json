@@ -1,5 +1,5 @@
 {
-  "extends": "expo/tsconfig.base",
+  // "extends": "expo/tsconfig.base", uncomment if it causes problems
   "compilerOptions": {
     "strict": true,
     "paths": {
