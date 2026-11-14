@@ -13,7 +13,13 @@ import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { Spacing } from '@/constants/theme';
 
-export type MenuSection = 'Home' | 'Health' | 'Hearing' | 'Activity' | 'Resources' | 'Settings';
+export type MenuSection =
+  | 'Health'
+  | 'Hearing'
+  | 'Activity'
+  | 'Sleep'
+  | 'Resources'
+  | 'Settings';
 
 type MenuItem = {
   label: MenuSection;
@@ -21,10 +27,10 @@ type MenuItem = {
 };
 
 const menuItems: MenuItem[] = [
-  { label: 'Home', icon: require('@/assets/images/tabIcons/home.png') },
   { label: 'Health', icon: require('@/assets/images/healthIcon.png') },
   { label: 'Hearing', icon: require('@/assets/images/hearingIcon.png') },
   { label: 'Activity', icon: require('@/assets/images/activity.png') },
+  { label: 'Sleep', icon: require('@/assets/images/sleepIcon.png') },
   { label: 'Resources', icon: require('@/assets/images/resourcesIcon.png') },
   { label: 'Settings', icon: require('@/assets/images/settingsIcon.png') },
 ];
@@ -34,7 +40,7 @@ type MenuProps = {
 };
 
 export default function Menu({ onSelect }: MenuProps) {
-  const [selectedSection, setSelectedSection] = useState<MenuSection>('Home');
+  const [selectedSection, setSelectedSection] = useState<MenuSection>('Health');
 
   function selectSection(section: MenuSection) {
     setSelectedSection(section);

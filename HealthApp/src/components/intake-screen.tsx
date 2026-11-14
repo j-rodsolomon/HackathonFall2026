@@ -125,7 +125,7 @@ export default function IntakeScreen() {
             <TextInput
               style={styles.textArea}
               placeholder="Optional. Symptoms, medications, questions..."
-              placeholderTextColor="#8b93a7"
+              placeholderTextColor="#64748B"
               multiline
               value={value}
               onChangeText={setAnswer}
@@ -154,35 +154,35 @@ export default function IntakeScreen() {
 
 const styles = StyleSheet.create({
   flex: { flex: 1 },
-  safe: { flex: 1, backgroundColor: '#000206' },
+  safe: { flex: 1, backgroundColor: '#FFFFFF' },
   container: { padding: 24, gap: 12 },
-  step: { color: '#8b93a7', fontSize: 14 },
-  track: { height: 6, backgroundColor: '#1a2030', borderRadius: 3, overflow: 'hidden' },
-  fill: { height: 6, backgroundColor: '#2563eb' },
-  title: { color: '#fff', fontSize: 26, fontWeight: '700', marginVertical: 16 },
+  step: { color: '#2563EB', fontSize: 14 },
+  track: { height: 6, backgroundColor: '#DBEAFE', borderRadius: 3, overflow: 'hidden' },
+  fill: { height: 6, backgroundColor: '#2563EB' },
+  title: { color: '#173B73', fontSize: 26, fontWeight: '700', marginVertical: 16 },
   option: {
-    borderWidth: 1, borderColor: '#2a3142', backgroundColor: '#0b0f1a',
+    borderWidth: 1, borderColor: '#BFDBFE', backgroundColor: '#FFFFFF',
     borderRadius: 12, padding: 16,
   },
-  optionSelected: { borderColor: '#2563eb', backgroundColor: '#12306b' },
-  optionText: { color: '#fff', fontSize: 16 },
+  optionSelected: { borderColor: '#2563EB', backgroundColor: '#EAF3FF' },
+  optionText: { color: '#173B73', fontSize: 16 },
   scaleRow: { flexDirection: 'row', flexWrap: 'wrap', gap: 8 },
   scaleBtn: {
     width: 52, height: 52, alignItems: 'center', justifyContent: 'center',
-    borderWidth: 1, borderColor: '#2a3142', backgroundColor: '#0b0f1a', borderRadius: 12,
+    borderWidth: 1, borderColor: '#BFDBFE', backgroundColor: '#FFFFFF', borderRadius: 12,
   },
-  hint: { color: '#8b93a7', fontSize: 14 },
+  hint: { color: '#64748B', fontSize: 14 },
   textArea: {
-    minHeight: 120, textAlignVertical: 'top', color: '#fff', fontSize: 16, padding: 14,
-    borderWidth: 1, borderColor: '#2a3142', backgroundColor: '#0b0f1a', borderRadius: 12,
+    minHeight: 120, textAlignVertical: 'top', color: '#173B73', fontSize: 16, padding: 14,
+    borderWidth: 1, borderColor: '#BFDBFE', backgroundColor: '#FFFFFF', borderRadius: 12,
   },
   buttons: { flexDirection: 'row', gap: 12, marginTop: 20 },
   backBtn: {
     flex: 1, padding: 16, borderRadius: 12, alignItems: 'center',
-    borderWidth: 1, borderColor: '#2a3142',
+    borderWidth: 1, borderColor: '#BFDBFE',
   },
-  backText: { color: '#fff', fontSize: 16, fontWeight: '600' },
-  nextBtn: { flex: 2, backgroundColor: '#2563eb', padding: 16, borderRadius: 12, alignItems: 'center' },
+  backText: { color: '#2563EB', fontSize: 16, fontWeight: '600' },
+  nextBtn: { flex: 2, backgroundColor: '#2563EB', padding: 16, borderRadius: 12, alignItems: 'center' },
   nextText: { color: '#fff', fontSize: 16, fontWeight: '600' },
   disabled: { opacity: 0.4 },
 });
